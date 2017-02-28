@@ -18,7 +18,8 @@ var config = {
     },
     module: {
         loaders: [
-            { test: /\.js$/, loaders: ['babel-loader'], exclude: /node_modules/ }
+            { test: /\.js$/, loaders: ['babel-loader'], exclude: /node_modules/ },
+            { test: /\.json$/, loaders: ['json-loader'], exclude: /node_modules/ },
         ]
     },
     output: {

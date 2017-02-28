@@ -22,6 +22,7 @@ prop    | default
 ------- | -------
 `width` | 400px
 `theme` | Themes.dark
+`timezone`| Asia/Dhaka
 
 ### Themes
 Theme      | Description 
