@@ -22,7 +22,7 @@ prop    | default
 ------- | -------
 `width` | 400px
 `theme` | Themes.dark
-`stratupTime`| 2017-04-12T12:12:00 (e.g.YYYY-MM-DDTHH:MM:SS)
+`gmtOffset` (optional)| offset of `new Date()` _(e.g. '-5.5')_
 
 ### Themes
 Theme      | Description 
