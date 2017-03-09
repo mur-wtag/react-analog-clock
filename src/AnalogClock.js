@@ -4,14 +4,13 @@ import AnalogClockLayout from './AnalogClockLayout';
 import Styles from './styles';
 import { cssTransform, updateTime } from './util';
 import { dark } from './themes';
-const moment = require('moment-timezone');
 
 export default class AnalogClock extends Component {
 
     constructor(props) {
         super();
 
-        const date = moment().tz(this.props.timezone).format();
+        const date = new Date(this.props.startupTime);
         this.state = {
             seconds: date.getSeconds(),
             minutes: date.getMinutes(),
@@ -51,11 +50,11 @@ AnalogClock.propTypes = {
         tick: PropTypes.string.isRequired,
     }),
     width: PropTypes.number,
-    timezone: PropTypes.string.isRequired,
+    startupTime: PropTypes.string.isRequired,
 };
 
 AnalogClock.defaultProps = {
     theme: dark,
     width: 400,
-    timezone: 'Asia/Dhaka',
+    startupTime: new Date(),
 };

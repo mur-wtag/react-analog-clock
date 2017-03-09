@@ -22,7 +22,7 @@ prop    | default
 ------- | -------
 `width` | 400px
 `theme` | Themes.dark
-`timezone`| Asia/Dhaka
+`stratupTime`| 2017-04-12T12:12:00 (e.g.YYYY-MM-DDTHH:MM:SS)
 
 ### Themes
 Theme      | Description 

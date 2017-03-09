@@ -46,8 +46,8 @@
     "eslint-plugin-react": "^5.1.1",
     "mocha": "^2.2.5",
     "react": "^0.14.8",
-    "react-addons-test-utils": "^15.1.0",
     "react-dom": "^0.14.8",
+    "react-addons-test-utils": "^15.1.0",
     "rimraf": "^2.5.2",
     "sinon": "^1.17.4",
     "webpack": "^1.12.13",
@@ -77,10 +77,5 @@
     "es/",
     "lib/"
   ],
-  "license": "MIT",
-  "dependencies": {
-    "json-loader": "^0.5.4",
-    "moment": "^2.17.1",
-    "moment-timezone": "^0.5.11"
-  }
+  "license": "MIT"
 }
