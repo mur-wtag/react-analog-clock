@@ -12,9 +12,9 @@ export default class AnalogClock extends Component {
 
         const date = this.initializeTime(props.gmtOffset);
         this.state = {
-            seconds: date[0],
+            seconds: date[2],
             minutes: date[1],
-            hour: date[2],
+            hour: date[0],
         };
 
         this.styles = cssTransform(Styles, props);
@@ -22,8 +22,8 @@ export default class AnalogClock extends Component {
 
     initializeTime(gmtOffset) {
         const now = new Date();
-        if (gmtOffset != null) {
-            const offsetNow = new Date(now.valueOf() + (gmtOffset * 1000 * 60 * 60));
+        if (gmtOffset != null && gmtOffset != '' && gmtOffset != 'undefined') {
+            const offsetNow = new Date(now.valueOf() + (parseFloat(gmtOffset) * 1000 * 60 * 60));
             return [offsetNow.getUTCHours(), offsetNow.getUTCMinutes(), offsetNow.getUTCSeconds()];
         } else {
             return [now.getHours(), now.getMinutes(), now.getSeconds()];
